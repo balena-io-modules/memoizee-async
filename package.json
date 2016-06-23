@@ -2,7 +2,8 @@
   "name": "memoizee-async",
   "version": "0.0.1",
   "scripts": {
-    "prepublish": "resin-lint . && npm test && coffee -c index.coffee",
+    "prepublish": "npm test && coffee -c index.coffee",
+    "pretest": "resin-lint .",
     "test": "./node_modules/.bin/mocha --compilers coffee:coffee-script/register ./test/"
   },
   "dependencies": {
