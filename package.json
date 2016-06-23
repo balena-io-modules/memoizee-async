@@ -3,7 +3,7 @@
   "version": "0.0.1",
   "scripts": {
     "prepublish": "npm test && coffee -c index.coffee",
-    "pretest": "resin-lint .",
+    "pretest": "resin-lint . test",
     "test": "mocha --compilers coffee:coffee-script/register ./test/"
   },
   "dependencies": {
