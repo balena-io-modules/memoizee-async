@@ -1,0 +1,19 @@
+{
+  "name": "memoizee-async",
+  "version": "0.0.1",
+  "scripts": {
+    "prepublish": "resin-lint . && coffee -c index.coffee",
+    "test": "./node_modules/.bin/mocha --compiler coffee:coffee-script/register ./test/"
+  },
+  "dependencies": {
+    "memoizee": "^0.3.10"
+  },
+  "devDependencies": {
+    "bluebird": "^3.4.1",
+    "chai": "^3.5.0",
+    "chai-as-promised": "^5.3.0",
+    "coffee-script": "^1.10.0",
+    "mocha": "^2.5.3",
+    "resin-lint": "^1.4.0"
+  }
+}
