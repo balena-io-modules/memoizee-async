@@ -1,6 +1,6 @@
-memoize = require '..' 
+memoize = require '..'
 Promise = require 'bluebird'
-chai = require 'chai' 
+chai = require 'chai'
 chaiAsPromised = require 'chai-as-promised'
 chai.use(chaiAsPromised)
 { expect } = chai
