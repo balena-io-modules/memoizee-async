@@ -4,7 +4,7 @@
   "scripts": {
     "prepublish": "npm test && coffee -c index.coffee",
     "pretest": "resin-lint .",
-    "test": "./node_modules/.bin/mocha --compilers coffee:coffee-script/register ./test/"
+    "test": "mocha --compilers coffee:coffee-script/register ./test/"
   },
   "dependencies": {
     "memoizee": "^0.3.10"
